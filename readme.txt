@@ -24,9 +24,7 @@ This plugin adds:
 BP Follow has been translated into the following languages by these awesome people:
 
 * Brazilian Portuguese - [espellcaste](https://profiles.wordpress.org/espellcaste)
-* French - [lauranshow](https://profiles.wordpress.org/lauranshow)
 * German - [solhuebner](https://profiles.wordpress.org/solhuebner)
-* Spanish - [saik003](https://github.com/saik003/buddypress-followers)
 
 For bug reports or to add patches or translation files, visit the [BP Follow Github page](https://github.com/r-a-y/buddypress-followers).
 
@@ -41,19 +39,6 @@ For bug reports or to add patches or translation files, visit the [BP Follow Git
 Check out the [BP Follow wiki](https://github.com/r-a-y/buddypress-followers/wiki).
 
 == Changelog ==
-
-= 1.3.0 =
-* Add object caching support.
-* Add ability to follow sites in WordPress multisite (only available in BuddyPress 2.0+)
-* Add support for BP's Suggestions API (only available in BuddyPress 2.1+)
-* Allow plugin to work in symlinked environments
-* Fix marking notifications as read for bp-default themes
-* Add Spanish translation (props saik003)
-* Developer: Add 'following' scope to activity loop (only available in BuddyPress 2.2+)
-* Developer: Add new `'follow_type'` and `'date_recorded'` database columns
-* Developer: Add ability to sort following and followers query by DB column
-* Developer: Add ability to query following and followers by WP's date query
-* Developer: Add ability to disable follow users module
 
 = 1.2.2 =
 * Fix deprecated notice in widget for those using WordPress 4.3+.
