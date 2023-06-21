@@ -67,7 +67,8 @@ class BP_Follow_Component extends BP_Component {
 		require( $this->path . '/bp-follow-actions.php' );
 		require( $this->path . '/bp-follow-hooks.php' );
 		require( $this->path . '/bp-follow-templatetags.php' );
-		require( $this->path . '/bp-follow-notifications.php' );
+		// DL comment out follow notifications for Living Sober
+		// require( $this->path . '/bp-follow-notifications.php' );
 		require( $this->path . '/bp-follow-widgets.php' );
 
 	}
@@ -155,15 +156,16 @@ class BP_Follow_Component extends BP_Component {
 		) );
 
 		/** FOLLOWING NAV ************************************************/
-
-		bp_core_new_nav_item( array(
-			'name'                => sprintf( __( 'Followers <span>%d</span>', 'bp-follow' ), $counts['followers'] ),
-			'slug'                => $bp->follow->followers->slug,
-			'position'            => apply_filters( 'bp_follow_followers_nav_position', 62 ),
-			'screen_function'     => 'bp_follow_screen_followers',
-			'default_subnav_slug' => 'followers',
-			'item_css_id'         => 'members-followers'
-		) );
+		
+		// DL Commented out to remove the followers from a users profile.
+		// bp_core_new_nav_item( array(
+		// 	'name'                => sprintf( __( 'Followers <span>%d</span>', 'bp-follow' ), $counts['followers'] ),
+		// 	'slug'                => $bp->follow->followers->slug,
+		// 	'position'            => apply_filters( 'bp_follow_followers_nav_position', 62 ),
+		// 	'screen_function'     => 'bp_follow_screen_followers',
+		// 	'default_subnav_slug' => 'followers',
+		// 	'item_css_id'         => 'members-followers'
+		// ) );
 
 		/** ACTIVITY SUBNAV **********************************************/
 
